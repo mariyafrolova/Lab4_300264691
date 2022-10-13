@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <ImageView
+            android:id="@+id/avatarImage"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:onClick="OnSetAvatarButton"
+            android:src="@drawable/fcb"
+            android:visibility="visible" />
+    
+    <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:text="Name: Team manager"
+                android:textSize="24sp" />    
+    <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    
+     <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="89dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/teamNameField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="(Enter a team name)" />                      
+     <TextView
+                android:id="@+id/teamNameTextField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Team Name" />
+
+     </LinearLayout>
+
+    <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+      
+        <EditText
+                android:id="@+id/teamAddressField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="(Please enter a ZIP code)"
+                android:inputType="textPersonName"
+                android:textAlignment="center" />
+      
+        <TextView
+                android:id="@+id/teamAddressTextField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Team Address" />
+      
+      </LinearLayout>
+    
+     <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+     <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="OnOpenInGoogleMaps"
+            android:text="Open in Google Maps" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
