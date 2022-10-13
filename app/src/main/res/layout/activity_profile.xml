@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:columnCount="3"
+            app:rowCount="2">
+
+            <ImageView
+                android:id="@+id/teamid00"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:onClick="SetTeamIcon"
+                android:src="@drawable/a1"
+                android:visibility="visible"
+                app:layout_column="0"
+                app:layout_columnSpan="1"
+                app:layout_row="0"
+                app:layout_rowSpan="1"
+                app:srcCompat="@drawable/fcb" />
+          
+          <ImageView
+                android:id="@+id/teamid03"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:onClick="SetTeamIcon"
+                android:src="@drawable/brazil"
+                android:visibility="visible"
+                app:layout_column="0"
+                app:layout_columnSpan="1"
+                app:layout_row="1"
+                app:layout_rowSpan="1" />
+       </androidx.gridlayout.widget.GridLayout>
+      
+          </LinearLayout>
+</android.support.constraint.ConstraintLayout>
